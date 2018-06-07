@@ -7,16 +7,16 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://dominio.com</loc>
+  <loc>https://rubengiraldo.github.io/webDGM/</loc>
 </url>
 <url>
-  <loc>http://dominio.com/inicio</loc>
+  <loc>https://rubengiraldo.github.io/webDGM/index.html</loc>
 </url>
 <url>
-  <loc>http://dominio.com/productos</loc>
+  <loc>https://rubengiraldo.github.io/webDGM/productos.html</loc>
 </url>
 <url>
-  <loc>http://dominio.com/contactenos</loc>
+  <loc>https://rubengiraldo.github.io/webDGM/contactenos.html</loc>
 </url>
 
 </urlset>
