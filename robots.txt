@@ -1,4 +1,4 @@
-# robots.txt for http://www.midominio.com/
+# robots.txt for https://rubengiraldo.github.io/webDGM/
 
 User-agent: *
 Disallow: /backend
