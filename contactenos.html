@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang = "es"><!-- etiqueta seo-->
+	<head>
+		<meta charset="UTF-8"><!-- etiqueta seo-->
+		<title>DGM: Contactenos</title><!-- etiqueta seo-->
+		<meta name="description" content="En esta pagina podras encontar desde capacitaciones en herramientas ofimaticas hasta desarrollo de paginas Web, Bases de Datos en diferentes SGBD, nos esforzamos por satisfacer las necesidades de nuestros clientes con un producto final de calidad" /> <!-- etiqueta seo-->
+		<meta name="keywords" content="Bases de datos, Desarrollos Web, Herramientas Ofimaticas,"/><!-- etiqueta seo-->
+		<meta name="robots" content="index,follow" /><!-- etiqueta seo-->
+		<link rel="canonical" href="http://www.midominio.com/" />
+		<!-- La etiqueta Canónical fue presentada por Google, Yahoo! y Bing en el año 2009 para solucionar la problemática de contenido duplicado o similar en SEO.
+
+Si en tu código no existe la etiqueta canónical en un conjunto de páginas con contenido duplicado o similar, los motores de búsqueda tendrán que decidir cuál es la URL que mejor se adapta a lo que está buscando específicamente el usuario..-->
+		<meta name="viewport" content="width=device-width,initial-scale=1"/><!-- etiqueta seo-->
+		<link rel="icon" href="imagenes/favicon.ico" sizes="32x32"/> <!-- etiqueta seo-->
+		<link rel="stylesheet" href="estilos.css">
+		<link rel="stylesheet" href="animate.css">
+		<link rel="stylesheet" href="formulario.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src ="http://use.fontawesome.com/502b7294a9.js"></script>
+		<script>
+			if(annyang){
+				annyang.setLanguage("es-CO");
+				var commands ={
+					'hola':()=>{
+						alert("Bienvenido!!!");
+					},
+					'nombre value' :(value)=>{
+						$("·nombre").val(value.tolowerCase())
+					}
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1 class= "animated fadeInDown"> Contactenos GM
+			</h1>	
+		</header>	
+		<article>
+			<img src="imagenes/logo.png" alt="logo">
+		</article>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="productos.html">Productos</a></li>
+				<li><a href="contactenos.html">Contactenos</a></li>
+			</ul>	
+		</nav>		
+		<section>
+			<article class = "bienvenido"><h2>Ubicacion</h2>
+			<h3>En el mapa que observas a continuacion se encuantra la ubicacion exacta de nuestra empresa.</h3>
+			</article>
+			<article>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15905.00988445899!2d-74.27075075!3d4.7261521!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1524063428501" allowfullscreen></iframe>
+			</article>
+		</section>
+		<section>
+			<article class= "formulario">
+				<h4 class = "title">DGM Bot</h4> 
+				<from action= "enviarCorreo.php" method="POST">
+				<input type = "text" placeholder = "Escriba su nombre" name = "nombre" class = "caja-1">
+				<input type = "email" placeholder = "Escriba su correo" name = "correo" class = "caja-1">
+				</from>	
+			<section class="container">
+				<article class="chat"></article>
+				<article class="busy"></article>
+				<article class="input">
+					<input type="text" placeholder="Habla conmigo!!!!" />
+					<a>Enviar</a>
+				</article>
+			</section>
+			<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+			<script type="text/javascript" src="js/chat-bot.js"></script>
+			<script type="text/javascript" src="js/index.js"></script>
+			</article>
+			<article class = "datos">
+				<ul class = "datos-contacto">
+				<li><i class ="fa fa-map-marker"></i><li>
+				<li><h4>Direccion</h4>Madrid</li>
+				<li><i class ="fa fa-mobile"></i><li>
+				<li><h4>Telefono</h4>300240560</li>
+				<li><i class ="fa fa-envelope"></i><li>
+				<li><h4>Correo</h4>info@contactenosGM.com</li></ul>
+			</article>
+			<article class = "datos">
+				<ul class = "datos-contacto">
+				<li><i class ="fa fa-twitter"></i><li>
+				<li><h4>twitter</h4><a href="https://twitter.com/login?lang=es" target="blank">@DesarollosGm</a></li>
+				<li><i class ="fa fa-facebook"></i><li>
+				<li><h4>Facebook</h4><a href="https://es-la.facebook.com/" target="blank">/RubenGiraldo.0406</a></li>
+				<li><i class ="fa fa-instagram"></i><li>
+				<li><h4>Instagram</h4><a href="https://www.instagram.com/accounts/login/?hl=es-la" target="blank">rubengiraldo87</a></li></ul>
+			</article>
+		</section>			
+	<footer>
+		<p>Todos los derechos reservados</p>
+		<p>(https://pixabay.com/es/ordenadores-celular-cuaderno-tablet-2690565/, https://pixabay.com/es/ordenador-port%C3%A1til-internet-realidad-1104066/)</p>
+	</footer>			
+	</body>
+</html>
