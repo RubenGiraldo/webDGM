@@ -1,21 +1,31 @@
 .formulario{
-	float:left;
+	float: left;
 	width: 50%;
 	margin-top: 10px;
 	color:#999;
 }
 
 .formu-ti{
-	margin: 30px 30px;
+	margin: 30px 180px;
 	text-align: left;
 	color:black;
 	font-family: sans-serif;
 }
 
 .caja-1{
-	width: 577px;
+	width: 560px;
 	height: 40px;
 	margin: 20px 20px;
+	padding: 10px;
+	font-size: 14px;
+	background: #E0E0E0;
+}
+
+.caja-2{
+	width: 560PX; 
+	height: 180px;
+	margin: 10px 20px;
+	float: left;
 	padding: 10px;
 	font-size: 14px;
 	background: #E0E0E0;
@@ -43,4 +53,20 @@
 	color: blue;
 	margin-top: 20px;
 	font-size: 70px;
+}
+
+input.boton{
+	padding: 8px 50px;
+	color: black;
+	margin: 20px 230px;
+	font-size: 1em;
+	background-color: #E0E0E0;
+	transition: background-color 0.2s;
+	border: 0px;
+	border-radius: 5px;
+	box-shadow: 0px 4px 0px #BDBDBD;
+}
+
+input.boton:hover{
+	background-color: #9E9E9E;
 }
