@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang = "es">
+<html lang ="es">
 	<head>
 		<meta charset="utf-8">
 		<title>DGM: Contactenos</title>
-		<meta name="description" content="En esta pagina podras encontar un aplio portafolio de servicios que va desde capacitaciones en herramientas ofimaticas hasta desarrollo de paginas Web, Bases de Datos en diferentes SGBD, conocimiento en diferentes lenguajes de programacion esforzadonos por satisfacer las necesidades de nuestros clientes con un producto final seguro y de calidad">
-		<meta name="keywords" content="Bases de datos, Desarrollos Web, Herramientas Ofimaticas,">
+		<meta name="description" content="En esta pagina podras encontar un aplio portafolio de servicios que va desde capacitaciones en herramientas ofimaticas hasta desarrollo de paginas Web, Bases de Datos en diferentes SGBD, conocimiento en diferentes lenguajes de programacion esforzadonos por satisfacer las necesidades de nuestros clientes con un producto final seguro y de calidad" />
+		<meta name="keywords" content="Bases de datos, Desarrollos Web, Herramientas Ofimaticas," />
 		<meta name="robots" content="index,follow" />
-		<link rel="canonical" href="http://https://rubengiraldo.github.io/webDGM/">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<link rel="icon" href="imagenes/favicon.ico" sizes="32x32">
+		<link rel="canonical" href="http://https://rubengiraldo.github.io/webDGM/" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link rel="icon" href="imagenes/favicon.ico" sizes="32x32" />
 		<link rel="stylesheet" href="estilos.css">
 		<link rel="stylesheet" href="animate.css">
 		<link rel="stylesheet" href="formulario.css">
-		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<script src ="http://use.fontawesome.com/502b7294a9.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
 		<script>
 			if(annyang){
 				annyang.setLanguage("es-CO");
@@ -21,12 +22,21 @@
 					'hola':()=>{
 						alert("Bienvenido!!!");
 					},
-					'nombre value' :(value)=>{
-						$("·nombre").val(value.tolowerCase())
+					'nombre *value' :(value)=>{
+						$("#nombre").val(value.tolowerCase());
 					}
+					
+					'email *value' :(value)=>{
+						$("#email").val(value.tolowerCase()
+							replace('arroba','@'));
+					}	
 				}
+			};
+			// Add our commands to annyang
+  		annyang.addCommands(commands);
 
-			}
+  			// Start listening.
+  		annyang.start();
 		</script>
 	</head>
 	<body>
@@ -54,22 +64,13 @@
 		</section>
 		<section>
 			<article class= "formulario">
-				<h4 class = "title">DGM Bot</h4> 
-				<from action= "enviarCorreo.php" method="POST">
-				<input type = "text" placeholder = "Escriba su nombre" name = "nombre" class = "caja-1">
-				<input type = "email" placeholder = "Escriba su correo" name = "correo" class = "caja-1">
-				</from>	
-			<section class="container">
-				<article class="chat"></article>
-				<article class="busy"></article>
-				<article class="input">
-					<input type="text" placeholder="Habla conmigo!!!!" />
-					<a>Enviar</a>
-				</article>
-			</section>
-			<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
-			<script type="text/javascript" src="js/chat-bot.js"></script>
-			<script type="text/javascript" src="js/index.js"></script>
+				<h4 class = "formu-ti">Formulario de Contacto</h4> 
+				<from action= "enviarCorreo.php" method="post">
+				<input type = "text" name = "nombre" placeholder = "Escriba su nombre"  class = "caja-1" required>
+				<input type = "email" name = "correo" placeholder = "Escriba su correo"  class = "caja-1" required>
+				<textarea name ="mensaje" placeholder ="Escriba su mensaje" class = "caja-2"></textarea>
+				</from>
+				<input type="submit" value= "enviar" class= "boton">	
 			</article>
 			<article class = "datos">
 				<ul class = "datos-contacto">
@@ -85,11 +86,10 @@
 				<li><i class ="fa fa-twitter"></i><li>
 				<li><h4>twitter</h4><a href="https://twitter.com/login?lang=es" target="blank">@DesarollosGm</a></li>
 				<li><i class ="fa fa-facebook"></i><li>
-				<li><h4>Facebook</h4><a href="https://es-la.facebook.com/" target="blank">/RubenGiraldo.0406</a></li>
+				<li><h4>Facebook</h4><a href="https://www.facebook.com/" target="blank">/RubenGiraldo.0406</a></li>
 				<li><i class ="fa fa-instagram"></i><li>
 				<li><h4>Instagram</h4><a href="https://www.instagram.com/accounts/login/?hl=es-la" target="blank">rubengiraldo87</a></li></ul>
-			</article>
-		</section>			
+			</article>			
 	<footer>
 		<p>Todos los derechos reservados</p>
 		<p>(https://pixabay.com/es/ordenadores-celular-cuaderno-tablet-2690565/, https://pixabay.com/es/ordenador-port%C3%A1til-internet-realidad-1104066/)</p>
