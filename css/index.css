@@ -5,15 +5,11 @@ body {
 
 .container {
 	width: 600px;
-	margin: 20px;
-	background: #E0E0E0;
+	margin: 20px 390px;
 }
 
 .title {
-	margin: 20px 20px;
-	text-align: left;
-	color:black;
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: bold;
 	font-family: "Courier New", Monospace;
 	padding-bottom: 5px;
@@ -21,8 +17,9 @@ body {
 
 .chat {
 	border: 1px solid #ccc;
-	height: 300px;
-	overflow-y: scroll;		
+	height: 400px;
+	overflow-y: scroll;
+	background-color: #E0E0E0;		
 }
 
 .chat div {
