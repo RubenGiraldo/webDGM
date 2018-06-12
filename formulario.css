@@ -2,7 +2,8 @@
 	float: left;
 	width: 50%;
 	margin-top: 10px;
-	color:#999;
+	background: rgba(0,0,0,0.4);
+	border-radius: 10px;
 }
 
 .formu-ti{
@@ -18,7 +19,7 @@
 	margin: 20px 20px;
 	padding: 10px;
 	font-size: 14px;
-	background: #E0E0E0;
+	background: white;
 }
 
 .caja-2{
@@ -28,7 +29,7 @@
 	float: left;
 	padding: 10px;
 	font-size: 14px;
-	background: #E0E0E0;
+	background: white;
 }
 
 .datos{
@@ -68,5 +69,6 @@ input.boton{
 }
 
 input.boton:hover{
+	cursor: pointer;
 	background-color: #9E9E9E;
 }
